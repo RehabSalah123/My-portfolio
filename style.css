@@ -1,0 +1,100 @@
+.container{
+  /* display: flex; */
+  /* background-color: #121212;
+  color: #F5F5F5; */
+  background-color: #4d4646;
+  color: #FAFAFA;
+  height: 600px;
+}
+
+body {
+  background-color: #000000;
+  color: #868686;
+  font-family: sans-serif;
+}
+
+a {
+  color: white;
+}
+
+button {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.card {
+  
+}
+
+.navbar{
+   display: flex;
+   align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(#65037e, rgb(0, 0, 0)) ;
+    color: white;
+    height: 100px;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 40px;
+}
+.hi{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+span{
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(255, 255, 255) 2px 2px ;
+  margin-left: 30px;
+  font-size: 30px;
+}
+/* .button3{
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    justify-content: space-between;
+    /* background-color: #4B0082; */
+    /* background-color: cornflowerblue; */
+} */
+
+.image{
+  background-color: rgb(255, 0, 0);
+  width: 500px;
+  height: 500px;
+}
+body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      padding: 0;
+      background: #f4f4f4;
+
+    }
+    header {
+      background: #fce771;
+      background: linear-gradient(rgb(211, 80, 204), rgb(26, 141, 218));
+      color: rgb(255, 255, 255);
+      padding: 20px 0;
+      margin: 0px;
+      text-align: center;
+    }
+    .blogs {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+      background: white;
+    }
+    .blog-post {
+      margin-bottom: 40px;
+    }
+    .blog-post h2 {
+      color: #333;
+    }
+    .blog-post p.date {
+      color: gray;
+      font-size: 0.9em;
+    }
+  </style>

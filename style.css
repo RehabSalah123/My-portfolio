@@ -944,7 +944,7 @@ section {
 .auth-form h2 {
   margin-bottom: 20px;
   text-align: center;
-  color: #333;
+  color: #e065cc;
 }
 
 .auth-form input {
@@ -959,7 +959,7 @@ section {
 .auth-form button {
   width: 100%;
   padding: 12px;
-  background-color: #4CAF50;
+  background-color: #f085de;
   border: none;
   color: white;
   font-size: 16px;
@@ -969,7 +969,7 @@ section {
 }
 
 .auth-form button:hover {
-  background-color: #45a049;
+  background-color: #e065cc;
 }
 
 .auth-form p {
@@ -978,7 +978,7 @@ section {
 }
 
 .auth-form a {
-  color: #007BFF;
+  color: #f085de;
   text-decoration: none;
 }
 

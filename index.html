@@ -1,61 +1,449 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Rehab Salah - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body class="body1">
-    <div class="container">
-        <div class="cont">
-        <div class="nav-navbar">
-            <nav class="navbar">
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
                 <div class="logo">
-                    <div>
-                        <span style="color: #f085de;"><b>Rehab</b></span>
-                    </div>
-                </div>   
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./services.html">Service</a></li>
-                        <li><a href="./skills.html">Skills</a></li>
-                        <li><a href="./project.html">Project</a></li>
-                        <li><a href="./blogs.html">Blogs</a></li>
-                        <li><a href="./contact.html">Contact Me</a></li>
-                        <li><a href="./signup.html">Sign Up</a></li>
-                        <li><a href="./login.html">Log In</a></li>
-                    </ul>
-            </nav>
-            <div class="button2">
-                
+                    <span class="logo-text">Rehab</span>
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item auth-links">
+                        <a href="./signup.html" class="auth-btn signup-btn">Sign Up</a>
+                        <a href="./login.html" class="auth-btn login-btn">Log In</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="hi">
-            <div>
-                <h4>Hello there!</h4>
-                <p>I'm
-                <h1>Rehab Salah,</h1>
-                </p>
-                <p>I build things for the web.</p>
-                <p>A passionate web app developer.</p>
-                <p> I tend to make use of
-                    modern web technologies to build websites that look great,</p>
-                <p>feel fantastic, and function correctly.</p>
-                <div class="button3">
-                    <button type="button"><b>View my portfolio</b></button>
-                    <button type="button"><b>Hire Me</b></button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h4 class="hero-greeting">Hello there!</h4>
+                    <h1 class="hero-title">I'm <span class="highlight">Rehab Salah</span></h1>
+                    <p class="hero-subtitle">I build things for the web</p>
+                    <p class="hero-description">A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View my portfolio</a>
+                        <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./Pictures/Messenger_creation_171447392551011.jpeg" alt="Rehab Salah" class="profile-img">
                 </div>
             </div>
-            <div class="image">
-             <img src="./Pictures/Messenger_creation_171447392551011.jpeg" alt="hero image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./Pictures/Pasted image.png" alt="About Rehab Salah">
+                </div>
+                <div class="about-text">
+                    <div class="about-intro">
+                        <span class="accent-text">- About Me</span>
+                        <h3>Who is Rehab Salah <span class="highlight">?</span></h3>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4 class="stat-number">5+</h4>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="stat-number">2+</h4>
+                            <p class="stat-label">Industry Covered</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="stat-number">1+</h4>
+                            <p class="stat-label">Years Of Experience</p>
+                        </div>
+                    </div>
+                    <div class="about-actions">
+                        <a href="#" class="btn btn-primary">Download CV</a>
+                        <a href="#contact" class="btn-link">Get in touch</a>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-    </div>
-</body>
+    </section>
 
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">What I Can Do For You</p>
+                <p class="section-description">I design and build high-quality websites that solve problems and drive results.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Custom Website Development</h3>
+                    <p>Responsive, fast, and accessible websites built with modern tech stacks (React, Next.js, HTML/CSS/JS).</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Clean, user-first interfaces crafted in Figma or Adobe XD, focused on usability and experience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Landing Pages & Conversion</h3>
+                    <p>High-converting, fast-loading pages tailored for product launches, marketing, or lead generation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>CMS Integration</h3>
+                    <p>WordPress, Webflow, or Headless CMS solutions that let you manage content without touching code.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-commerce Development</h3>
+                    <p>Shopify, WooCommerce, or custom e-commerce solutions with secure checkout and easy admin tools.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Website Optimization & SEO</h3>
+                    <p>Improve speed, SEO, and performance to help your site rank and load lightning fast.</p>
+                </div>
+            </div>
+            <div class="services-cta">
+                <p>Have a project in mind or need help getting started?</p>
+                <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-code"></i>
+                        Frontend
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">React</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-server"></i>
+                        Backend
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">Express</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">SQL</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Platforms
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">GitHub</div>
+                        <div class="skill-item">VS Code</div>
+                        <div class="skill-item">Figma</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">A selection of my recent web development work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./Pictures/pricing.PNG" alt="Project One">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project One</h3>
+                        <p>A single price grid component built with HTML & CSS.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/RehabSalah123/Day-3/tree/master" class="project-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./Pictures/Pasted image2.png" alt="Project Two">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Two</h3>
+                        <p>A hero section built with HTML & CSS.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/RehabSalah123/Day-3" class="project-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./Pictures/desktop-design.jpg" alt="Project Three">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Three</h3>
+                        <p>Blog preview card built with HTML & CSS.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/RehabSalah123/day3challenge" class="project-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./Pictures/Screenshot from 2025-09-26 13-04-17.png" alt="Project Four">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Four</h3>
+                        <p>A responsive portfolio site design built with FIGMA.</p>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/design/y59PdfyN5gzuw3fErY4RTL/Untitled?node-id=0-1&t=4o77WBlTjG6Eghs6-1" class="project-link">
+                                <i class="fab fa-figma"></i>
+                                Figma
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Blog</h2>
+                <p class="section-subtitle">Insights, tutorials, and updates from my journey as a web developer</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="./Pictures/download.png" alt="Blog Post 1">
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">Why You Should Use Next.js in 2025</a></h3>
+                        <div class="blog-meta">
+                            <span class="blog-date">Sep 10, 2025</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <p class="blog-excerpt">Next.js has taken over modern web development with SSR, API routes, and image optimization...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="./Pictures/download (1).png" alt="Blog Post 2">
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">Top 10 CSS Tricks You Didn't Know</a></h3>
+                        <div class="blog-meta">
+                            <span class="blog-date">Aug 25, 2025</span>
+                            <span class="blog-read-time">4 min read</span>
+                        </div>
+                        <p class="blog-excerpt">These CSS techniques can elevate your UI/UX design and improve frontend performance...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="./Pictures/download.jpeg" alt="Blog Post 3">
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">How I Built My Portfolio with Tailwind CSS</a></h3>
+                        <div class="blog-meta">
+                            <span class="blog-date">Jul 30, 2025</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                        <p class="blog-excerpt">In this post, I share the tools, layout decisions, and challenges I faced building my developer portfolio...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello 👋</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Other Ways to Reach Me</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>Email</p>
+                            <a href="mailto:rehabsalahbash@gmail.com">rehabsalahbash@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <p>LinkedIn</p>
+                            <a href="#">linkedin.com/in/yourprofile</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <p>GitHub</p>
+                            <a href="https://github.com/RehabSalah123">github.com/RehabSalah123</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo">
+                        <span class="logo-text">Rehab</span>
+                    </div>
+                    <p>UI/UX Designer & Frontend Developer passionate about creating digital solutions that drive results.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rehab Salah. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+       
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
 </html>
